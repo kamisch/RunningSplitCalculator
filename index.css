@@ -1,14 +1,21 @@
 body{
     /* color: blue; */
     /* background: black; */
-    
+    background-image: url("./asset/track.png");
+    background-size: 100% 450%;
+    background-repeat: no-repeat;
+}
+#main{
+    background:white;
+    box-shadow: 5px 5px 10px 10px;
+    margin: 0;
+
 }
 #topSection {
     /* border:1px black solid; */
     text-align: center;
     margin: 30px auto;
-
-
+    /* box-shadow: 5px 5px 10px 5px; */
 }
 #topSection > * {
     margin-left: auto;
@@ -19,4 +26,5 @@ body{
     width: 80%;
     height: 100%;
     margin: 0px auto;
+    background:white;
 }
