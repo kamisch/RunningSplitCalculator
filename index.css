@@ -1,0 +1,22 @@
+body{
+    /* color: blue; */
+    /* background: black; */
+    
+}
+#topSection {
+    /* border:1px black solid; */
+    text-align: center;
+    margin: 30px auto;
+
+
+}
+#topSection > * {
+    margin-left: auto;
+    /* display: block; */
+    display: inline-block;
+}
+#tInput{
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+}
