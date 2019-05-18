@@ -1,6 +1,7 @@
 body{
     /* color: blue; */
     /* background: black; */
+    /* Free image from https://www.pexels.com/photo/brown-and-white-track-field-163444/ */
     background-image: url("./asset/track1.jpg");
     background-size: 100% 450%;
     background-repeat: no-repeat;
