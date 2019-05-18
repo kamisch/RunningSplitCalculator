@@ -11,6 +11,13 @@ body{
     margin: 0 auto;
     width:90%;
 }
+#output{
+    background:white;
+    box-shadow: 1px 10px 20px;
+    margin: 5% auto;
+    width:70%;
+    text-align: center;
+}
 #topSection {
     /* border:1px black solid; */
     text-align: center;
