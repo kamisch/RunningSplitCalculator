@@ -1,11 +1,32 @@
-body{
-    /* color: blue; */
-    /* background: black; */
-    /* Free image from https://www.pexels.com/photo/brown-and-white-track-field-163444/ */
-    background-image: url("./asset/track1.jpg");
-    /* background-size: 100% 100%; */
-    background-repeat: no-repeat;
-    /* background: black; */
+
+@media (min-width: 991px) {
+    body{
+        /* Free image from https://www.pexels.com/photo/brown-and-white-track-field-163444/ */
+        background-image: url("./asset/track1.jpg");
+        /* background-size: 100% 100%; */
+        background-repeat: no-repeat;
+    
+    }
+}
+
+@media (min-width: 767px) {
+    body{
+        /* Free image from https://www.pexels.com/photo/brown-and-white-track-field-163444/ */
+        background-image: url("./asset/track1.jpg");
+        background-size: 80% 100%;
+        background-repeat: no-repeat;
+    
+    }
+}
+
+@media (min-width: 479px) {
+    body{
+        /* Free image from https://www.pexels.com/photo/brown-and-white-track-field-163444/ */
+        background-image: url("./asset/track1.jpg");
+        background-size: 50% 100%;
+        background-repeat: no-repeat;
+    
+    }
 }
 #main{
     background:white;
