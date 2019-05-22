@@ -38,7 +38,9 @@
         <div id="tInput">
             <form>
                 <div class="input-group mb-5">
-                    <input id = "distance" type="text" class="form-control" placeholder="Distance">
+                    <input id = "distance" type="text" class="form-control" placeholder="Distance" value="0">
+                    <label for="distance" class="form-control">Distance</label>
+
                     <div class="input-group-prepend">
                         <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
                             unit
@@ -50,9 +52,13 @@
                             <a class="dropdown-item" href="#miles">miles</a>
                         </div>
                     </div>
-                    <input id = "hours" type="text" class="form-control" placeholder="Hour">
-                    <input id = "mins" type="text" class="form-control" placeholder="Minute" >
-                    <input id = "secs" type="text" class="form-control" placeholder="Second">
+                    <input id = "hours" type="text" class="form-control" placeholder="Hour" value="0">
+                    <label for="hours" class="form-control">Hours</label>
+                    <input id = "mins" type="text" class="form-control" placeholder="Minute" value="0">
+                    <label for="mins" class="form-control">Mins</label>
+                    <input id = "secs" type="text" class="form-control" placeholder="Second" value="0">
+                    <label for="secs" class="form-control">Secs</label>
+
                     <div class="input-group-append">
                         <button id = "calculate" class="btn btn-success" type="submit">Go</button>
                     </div>
