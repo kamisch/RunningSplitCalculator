@@ -74,7 +74,7 @@ $(document).ready(function () {
         outputData(disVal/time);
     }
     // check for input error
-    var inputOutOfBound = function () {
+    var isVaildInput = function () {
         if (hourVal > 24 || hourVal < 0) {
             alert("Hours input incorrect");
             return 0;
@@ -95,6 +95,10 @@ $(document).ready(function () {
             alert("Some inputs are empty");
             return 0;
         }
+        if (hourVal == 0 & secVal == 0 & minVal == 0){
+            alert("You time input is all 0");
+            return 0;
+        }
         return 1;
 
     }
@@ -104,7 +108,7 @@ $(document).ready(function () {
         secVal = parseFloat($('#secs').val());
         disVal = parseFloat($('#distance').val());
         //calculate total time
-        if (inputOutOfBound() == 1) {
+        if (isVaildInput() == 1) {
             let ttTime = (hourVal * 60 * 60 + minVal * 60 + secVal);
             calculateSplits(ttTime);
         }
@@ -113,5 +117,6 @@ $(document).ready(function () {
     });
     $(".dropdown-menu a").click(function () {
         disUnit = $(this).text();
+        alert("Unit is now {}".format(disUnit));
     });
 });
