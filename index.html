@@ -1,71 +1,104 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-    <title>RunningSplitCalc</title>
-    <link rel="icon" href="./asset/running0049.gif">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="./index.css">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
-    </script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
-    </script>
+  <head>
+    <title>RunningSplitCalculator</title>
+    <link rel="icon" href="./asset/running0049.gif" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" type="text/css" href="./index.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+      crossorigin="anonymous"
+    ></script>
     <script src="./index.js"></script>
-</head>
+  </head>
 
-<body>
-        <ul>
-                <li><a href="./index.html">Home</a></li>
-                <li style="float:right"><a class="active" href="https://github.com/kamisch/RunningSplitCalculator">About</a></li>
-        </ul>
-    <!-- <img src = "asset/track.png"> -->
+  <body>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li style="float: right">
+        <a
+          class="active"
+          href="https://github.com/kamisch/RunningSplitCalculator"
+          >About</a
+        >
+      </li>
+    </ul>
     <div id="main">
-        <!-- assests from http://www.animatedimages.org/ -->
-        <div id="topSection">
-            <img src="./asset/running0064.gif">
-            <h3>
-                Running Split Calculator
-            </h3>
-            <img src="./asset/running0074.gif">
-
-        </div>
-        <div id="tInput">
-            <form>
-                <div class="input-group mb-5">
-                    <input id = "distance" type="text" class="form-control" placeholder="Distance">
-                    <div class="input-group-prepend">
-                        <button type="button" class="btn btn-outline-secondary dropdown-toggle" data-toggle="dropdown">
-                            unit
-                        </button>
-                        <div class="dropdown-menu">
-                            <a class="dropdown-item" href="#meters">meters</a>
-                            <a class="dropdown-item" href="#kilometers">kilometers</a>
-                            <a class="dropdown-item" href="#feet">feet</a>
-                            <a class="dropdown-item" href="#miles">miles</a>
-                        </div>
-                    </div>
-                    <input id = "hours" type="text" class="form-control" placeholder="Hour">
-                    <input id = "mins" type="text" class="form-control" placeholder="Minute" >
-                    <input id = "secs" type="text" class="form-control" placeholder="Second">
-                    <div class="input-group-append">
-                        <button id = "calculate" class="btn btn-success" type="submit">Go</button>
-                    </div>
-                </div>
-            </form>
-
-        </div>
+      <div id="topSection">
+        <img src="./asset/running0064.gif" />
+        <h3>Running Split Calculator</h3>
+        <img src="./asset/running0074.gif" />
+      </div>
+      <div id="tInput">
+        <form>
+          <div class="input-group mb-5">
+            <input
+              id="distance"
+              type="text"
+              class="form-control"
+              placeholder="Distance"
+            />
+            <div class="input-group-prepend">
+              <button
+                type="button"
+                class="btn btn-outline-secondary dropdown-toggle"
+                data-toggle="dropdown"
+              >
+                unit
+              </button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#meters">meters</a>
+                <a class="dropdown-item" href="#kilometers">kilometers</a>
+                <a class="dropdown-item" href="#feet">feet</a>
+                <a class="dropdown-item" href="#miles">miles</a>
+              </div>
+            </div>
+            <input
+              id="hours"
+              type="text"
+              class="form-control"
+              placeholder="Hour"
+              value="0"
+            />
+            <input
+              id="mins"
+              type="text"
+              class="form-control"
+              placeholder="Minute"
+              value="0"
+            />
+            <input
+              id="secs"
+              type="text"
+              class="form-control"
+              placeholder="Second"
+              value="0"
+            />
+            <div class="input-group-append">
+              <button id="calculate" class="btn btn-success" type="submit">
+                Go
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
     </div>
-    <div id="output">
-
-    </div>
-
-
-</body>
-
+    <div id="output"></div>
+  </body>
 </html>

@@ -1,110 +1,102 @@
-
 @media screen and (max-width: 991px) {
-    /* start of large tablet styles */
-    body{
-        /* Free image from https://www.pexels.com/photo/brown-and-white-track-field-163444/ */
-        background-image: url("./asset/track1.jpg");
-        background-size: 100% 500%;
-        background-repeat: no-repeat;
-    
-    }
-}
-    
-    @media screen and (max-width: 767px) {
-    /* start of medium tablet styles */
-    body{
-        /* Free image from https://www.pexels.com/photo/brown-and-white-track-field-163444/ */
-        background-image: url("./asset/track1.jpg");
-        background-size: 100% 600%;
-        background-repeat: no-repeat;
-    
-    }
-    }
-    
-    @media screen and (max-width: 479px) {
-    /* start of phone styles */
-    body{
-        /* Free image from https://www.pexels.com/photo/brown-and-white-track-field-163444/ */
-        background-image: url("./asset/track1.jpg");
-        background-size: 100% 700%;
-        background-repeat: no-repeat;
-    
-    }
-}
-body{
+  /* start of large tablet styles */
+  body {
     /* Free image from https://www.pexels.com/photo/brown-and-white-track-field-163444/ */
     background-image: url("./asset/track1.jpg");
-    /* background-size: 50% 100%; */
+    background-size: 100% 500%;
     background-repeat: no-repeat;
+  }
+}
 
+@media screen and (max-width: 767px) {
+  /* start of medium tablet styles */
+  body {
+    /* Free image from https://www.pexels.com/photo/brown-and-white-track-field-163444/ */
+    background-image: url("./asset/track1.jpg");
+    background-size: 100% 600%;
+    background-repeat: no-repeat;
+  }
+}
+
+@media screen and (max-width: 479px) {
+  /* start of phone styles */
+  body {
+    /* Free image from https://www.pexels.com/photo/brown-and-white-track-field-163444/ */
+    background-image: url("./asset/track1.jpg");
+    background-size: 100% 700%;
+    background-repeat: no-repeat;
+  }
+}
+body {
+  /* Free image from https://www.pexels.com/photo/brown-and-white-track-field-163444/ */
+  background-image: url("./asset/track1.jpg");
+  /* background-size: 50% 100%; */
+  background-repeat: no-repeat;
 }
 @media (min-width: 991px) {
-    
 }
 
 @media (min-width: 767px) {
-   
 }
 
 @media (min-width: 479px) {
-   
 }
-#main{
-    background:white;
-    box-shadow: 1px 10px 20px;
-    margin: 0 auto;
-    width:90%;
+#main {
+  background: white;
+  box-shadow: 1px 10px 20px;
+  margin: 0 auto;
+  width: 90%;
 }
-#output{
-    background:white;
-    box-shadow: 1px 10px 20px;
-    margin: 5% auto;
-    width:70%;
-    text-align: center;
+#output {
+  background: white;
+  box-shadow: 1px 10px 20px;
+  margin: 5% auto;
+  width: 70%;
+  text-align: center;
 }
 #topSection {
-    /* border:1px black solid; */
-    text-align: center;
-    margin: 30px auto;
-    /* box-shadow: 5px 5px 10px 5px; */
+  /* border:1px black solid; */
+  text-align: center;
+  margin: 30px auto;
+  /* box-shadow: 5px 5px 10px 5px; */
 }
 #topSection > * {
-    margin-left: auto;
-    /* display: block; */
-    display: inline-block;
+  margin-left: auto;
+  /* display: block; */
+  display: inline-block;
 }
-#tInput{
-    width: 80%;
-    height: 100%;
-    margin: 0px auto;
-    background:white;
+#tInput {
+  width: 80%;
+  height: 100%;
+  margin: 0px auto;
+  background: white;
 }
 
 /* Nav css */
 ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  li {
-    float: left;
-  }
-  
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-    background-color: #111;
-  }
-  
-  .active {
-    background-color: rgb(175, 76, 76);
-  }
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: rgb(175, 76, 76);
+}
